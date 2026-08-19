@@ -1,0 +1,129 @@
+.big_container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        'area1 area1 area1 area1 area2 area2 area3 area3'
+        'area1 area1 area1 area1 area2 area2 area3 area3'
+        'area1 area1 area1 area1 area4 area4 area3 area3'
+        'area1 area1 area1 area1 area4 area4 area3 area3'
+        'area5 area5 area6 area6 area4 area4 area7 area7'
+        'area5 area5 area6 area6 area4 area4 area7 area7'
+        'area5 area5 area6 area6 area8 area8 area7 area7'
+        'area9 area9 area10 area11 area8 area8 area7 area7'
+    ;
+
+    gap: 10px;
+    height: 50rem;
+    width: 100rem;
+    
+}
+body{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.041)), url(Person.jpg) ;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+
+}
+.big_container h1,
+h3 {
+    color: white;
+    margin: 10px;
+}
+
+.big_container div{
+    border-radius: 10px;
+}
+.card1 {
+    grid-area: area1;
+    background-image: url(kyoto.jpg);
+    display: flex;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card1 h1,
+h3 {
+    color: white;
+    margin: 10px;
+    font-weight: normal;
+}
+
+.card2 {
+    grid-area: area2;
+    background-color: #3D1D1D;
+}
+
+.card2 h1,
+h3 {
+    color: white;
+    margin: 20px;
+    font-weight: normal;
+}
+
+.card3 {
+    grid-area: area3;
+    background-image: url(Flower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card4 {
+    grid-area: area4;
+    background-image: url(Road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.card5 {
+    grid-area: area5;
+    background-color: #3D1D1D;
+
+}
+
+.card6 {
+    grid-area: area6;
+    background-image: url(Person.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card7 {
+    grid-area: area7;
+    background-image: url(image-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.card8 {
+    grid-area: area8;
+    background-color: #3D1D1D;
+}
+
+.card9 {
+    grid-area: area9;
+    background-color: #893615;
+}
+
+.card10 {
+    grid-area: area10;
+    background-color: #3D1D1D;
+}
+
+.card11 {
+    grid-area: area11;
+    background-color: #3D1D1D;
+}
