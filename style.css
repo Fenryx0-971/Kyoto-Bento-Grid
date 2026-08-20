@@ -32,12 +32,38 @@ body{
 
 
 }
+.bigbigcontainer{
+    height: fit-content;
+    background-color: black;
+    width:max-content;
+    padding: 10px;    
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #0e0d0d,#503A3C);
+
+}
 .big_container h1,
-h3 {
+h3, h2 {
     color: white;
     margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.big_container h3{
+    font-size: small ;
+    font-weight: normal;
+}
+.big_container h2{
+    font-weight: normal;
+    font-size: small;
 
+}
+.big_container h1{
+    font-size: xx-large ;
+    font-weight: bold !important;
+    margin-bottom: 0px;
+}
+.text3{
+    flex-direction: column;
+}
 .big_container div{
     border-radius: 10px;
 }
@@ -50,23 +76,16 @@ h3 {
     background-size: cover;
 }
 
-.card1 h1,
-h3 {
-    color: white;
-    margin: 10px;
-    font-weight: normal;
-}
 
 .card2 {
     grid-area: area2;
-    background-color: #3D1D1D;
+    background:linear-gradient( to left ,#3A1D19, #2A1A17);
 }
 
 .card2 h1,
 h3 {
     color: white;
     margin: 20px;
-    font-weight: normal;
 }
 
 .card3 {
@@ -85,11 +104,14 @@ h3 {
 
 
 }
-
+.card2, .card5, .card10, .card9, .card8, .card11{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
 .card5 {
     grid-area: area5;
-    background-color: #3D1D1D;
-
+    background:linear-gradient( to left ,#3A1D19, #2A1A17);
 }
 
 .card6 {
@@ -106,24 +128,32 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
+    background-position: -50px;
 }
 
 .card8 {
     grid-area: area8;
-    background-color: #3D1D1D;
+    background:linear-gradient( to left ,#3A1D19, #2A1A17);
 }
 
 .card9 {
     grid-area: area9;
-    background-color: #893615;
+    background:linear-gradient( to left ,rgb(206, 76, 25), rgba(51, 38, 31, 0.514));
+    font-size: medium !important;
+    display: flex;
+    justify-content: center ;
 }
 
 .card10 {
     grid-area: area10;
     background-color: #3D1D1D;
+    display: flex;
+    justify-content: center ;
 }
 
 .card11 {
     grid-area: area11;
     background-color: #3D1D1D;
+    display: flex;
+    justify-content: center ;
 }
